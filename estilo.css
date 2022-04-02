@@ -1,0 +1,177 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*---------------CONTENEDOR GENERAL---------------*/
+.grid-contain{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main aside aside"
+    "main main aside aside"
+    "main main aside aside"
+    "footer footer footer footer";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:70px repeat(3,1fr) 70px;
+    height: 100vh;
+    
+}
+
+/*--------------DIVISION DE MI PAGINA GENERAL-------------*/
+.grid-header{
+    background: rgb(255, 255, 255);
+    grid-area: header;
+}
+
+.grid-main{
+    background: rgb(12, 241, 192);
+    grid-area: main;
+}
+
+.grid-aside{
+    background: rgb(255, 255, 255);
+    grid-area: aside;
+}
+
+.grid-footer{
+    background: rgb(243, 228, 25);
+    grid-area: footer;
+}
+
+
+
+/*-----------------SECCION HEADER-----------------------*/
+.grid-header{
+    grid-template-areas:"head1 head1 head2 head2";
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.header__div-1{ 
+    grid-area: head1;
+    padding: 20px 100px;
+}
+
+.header__div-1 b {
+    color: blue;
+    font-size: 25px;
+}
+
+.header__div-2{
+    background: linear-gradient(to left, transparent, rgb(83, 169, 240));
+    grid-area: head2;
+    padding: 25px;
+   
+
+}
+
+.nav__ul{
+    align-items: center;
+    font-size: 16px;
+     
+} 
+
+.nav__ul li{
+    display: inline-block;
+}
+
+.nav__ul-li{
+    color: #777;
+    padding: 25px ;
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+.ul-5{
+    padding: 20px;
+    border-radius: 0.25em;
+    background-color: #00f;
+    color: white;
+}
+
+.ul-5:hover{
+    background: #009;
+}
+
+
+
+/*--------------------SECCION MAIN------------------------------*/
+
+.grid-main{
+    background-color: #fff;
+    margin: 0;
+}
+
+
+.main__div-div{
+    clip-path: polygon(100% 0, 0 0, 50% 50%);
+    background-color: #999;
+    opacity: 10%;
+    width: 150px;
+    height: 100px;
+    margin-left: 5%;
+}
+
+.grid-main__div{
+    margin-top: -70px;
+    padding: 0px 100px;
+    
+   
+}
+
+.main__div-h1{
+    text-align: left;
+    font-size: 50px;
+    color: rgb(36, 77, 124);
+}
+
+.main__div-h2{
+    color: #888;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    
+}
+
+.div__nav-item{
+    margin-top: 15px;
+ 
+}
+
+.nav__ul-item li{
+    display: inline-block;
+    margin-top: 0;
+    width: 220px;
+}
+
+.nav__ul-item {
+    padding: 3px;
+    margin-left: 5px;
+    list-style: none;
+    color: rgba(236, 221, 15, 0.597);
+}
+
+.nav__ul-item a{
+    text-decoration: none;
+    margin-left: 7px;
+    color: #009;
+}
+
+.nav_ul-item i{
+    width: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------SECCION ASIDE---------------------*/
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
